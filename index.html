@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Music Is Fun!</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="/assets/style.css">
+
+</head>
+
+<body>
+    <main class="container">
+        <header class="row">
+            <div class="col text-center">
+                <img class="title" src="/assets/music-title.png" alt="">
+            </div>
+        </header>
+        <section class="row">
+            <form class="col offset-7 mb-3 form-inline " onsubmit="app.controllers.itunesCtrl.getMusic(event)">
+                <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
+                <div class="form-group">
+                    <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
+                    <button type="submit" class=" ml-2 btn btn-danger" id="get-music-button">Get Music</button>
+                </div>
+            </form>
+        </section>
+        <section class="row box" id="songs">
+        </section>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="module" src="app/main.js"></script>
+    </main>
+</body>
+
+</html>
