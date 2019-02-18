@@ -11,7 +11,9 @@ export default class Song {
 
     }
     getSong() {
-        return
+        return `
+        
+        `
     }
     getTemplate() {
         return `
