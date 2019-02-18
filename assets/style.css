@@ -1,5 +1,5 @@
 body {
-  background-image: url(assets/music-box.jpg);
+  background-image: url(/assets/music-box.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
